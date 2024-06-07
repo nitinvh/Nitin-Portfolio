@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif, Times, serif;
+  font-size: 62.5%;
+}
+
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.w-100{
+  width: 100vw;
+}
+
+
+.hover-effect:hover {
+  color: #ffc107 !important; /* Change to your desired hover color */
+}
+
+.m-6{
+  margin: 60px;
+}
+
+.mx-6{
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.mx-10{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.profile-pic {
+  height: 200px;
+  width: 200px;
+}
+
+.profile-border-color{
+  border-color: #ffc107 !important;
+}
+
+.pt-6{
+  padding-top: 60px;
+}
+
+.py-6{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.text-theme-color {
+  color: #ffc107 !important;
+}
