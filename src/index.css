@@ -24,6 +24,15 @@ body {
   color: #ffc107 !important; /* Change to your desired hover color */
 }
 
+.w-22 {
+  min-width: 22rem;
+  
+}
+
+.h-4{
+  height: 4rem !important;
+}
+
 .m-6{
   margin: 60px;
 }
@@ -58,4 +67,38 @@ body {
 
 .text-theme-color {
   color: #ffc107 !important;
+}
+
+.skill-carousel-container {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 20px 0;
+}
+
+.skill-carousel {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.skill-item {
+  display: inline-block;
+  text-align: center;
+}
+
+.skill-img {
+  width: 100px;
+  height: 100px;
+}
+
+.custom-font-size {
+  font-size: 5.5rem !important;
 }
