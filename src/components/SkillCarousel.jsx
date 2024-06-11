@@ -19,9 +19,9 @@ const skills = [
 
 const SkillCarousel = () => {
     return (
-        <div className="skill-carousel-container text-dark py-5 mx-6">
-            <h1 className="f fw-bolder text-start mb-5 text-decoration-underlin custom-font-size">Skills</h1>
-            <div className="skill-carousel d-flex">
+        <div className="skill-carousel-container text-light py-5 mx-5 mt-5">
+            <h1 className="fw-bolder text-start mb-5 custom-font-size">Skills</h1>
+            <div className="skill-carousel d-flex pt-5">
                 {skills.map((skill, index) => (
                     <div className="skill-item text-center mx-3 d-flex justify-content center align-items-center" key={index}>
                         <img src={skill.img} alt={skill.name} className="skill-img img-fluid mx-2 h-4" />

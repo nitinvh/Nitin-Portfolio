@@ -15,6 +15,24 @@ body {
   min-height: 100vh;
 }
 
+/* Customize the scrollbar */
+body::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(38, 37, 37); /* Color of the scrollbar track */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3); /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Roundness of the scrollbar thumb */
+  border: 2px solid transparent; /* Extra space around the scrollbar thumb */
+  background-clip: padding-box; /* Clip background to padding box */
+  transition: background-color 0.3s ease; /* Smooth transition for scrollbar thumb */
+}
+
+
 .w-100{
   width: 100vw;
 }
@@ -35,6 +53,10 @@ body {
 
 .m-6{
   margin: 60px;
+}
+
+.mt-6{
+  margin-top: 6rem;
 }
 
 .mx-6{
@@ -69,6 +91,17 @@ body {
   color: #ffc107 !important;
 }
 
+.sec-txt-theme-clr {
+  color: #c6bc9c;
+}
+
+.third-theme-clr {
+  color: #716e66;
+}
+
+.fourth-theme-color {
+  color: #c0baa8;
+}
 .skill-carousel-container {
   overflow: hidden;
   white-space: nowrap;
@@ -100,5 +133,9 @@ body {
 }
 
 .custom-font-size {
-  font-size: 5.5rem !important;
+  font-size: 4rem !important;
+}
+
+.custom-border-color {
+  border-color: #ffc107 !important;
 }
