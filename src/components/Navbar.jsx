@@ -5,7 +5,7 @@ import Home from '../../public/home.svg';
 const MyNavbar = () => {
     return (
         <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
-            <div className="w-100 d-flex justify-content-between mx-6">
+            <div className="w-100 d-flex justify-content-between mx-5">
                 <Navbar.Brand href="#home" className="fs-1 hover-effect d-flex justify-content-center align-items-center">
                     <img src={Home} className="me-2" />
                     Home
