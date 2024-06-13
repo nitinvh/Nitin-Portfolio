@@ -5,6 +5,7 @@ import _highradius from '../assets/highradius.png';
 const library = {
     experiences: [
         {
+            id: 0,
             companyLogo: _unify,
             title: 'Software Development Engineer',
             company: 'Unify Technologies',
@@ -18,8 +19,56 @@ const library = {
                 "Collaborated with cross-functional teams to define, design, and ship new features, improving team efficiency by 15%.",
                 "Conducted code reviews and provided feedback to ensure adherence to best practices and coding standards, leading to a 50% decrease in reported bugs."
             ],
+            linkedinUrl: 'https://www.linkedin.com/company/unifytech/', // Replace with actual LinkedIn URL
+            // aboutProject: "During my internship at Walkover, I focused on creating responsive and accessible web interfaces. My contributions helped improve the user experience significantly, and I gained valuable insights into frontend development and problem-solving in real-world scenarios.",
+            aboutProject: {
+                about: `As a Full-time Software Development Engineer at Unify Technologies, I primarily focused on frontend development, contributing significantly to the creation and enhancement of UnifyCare, a SaaS-based healthcare web application. My journey with UnifyCare began on day one of my tenure at Unify Technologies, and I have been an integral part of the team since the project's inception.`,
+                projectOverview: `UnifyCare is a comprehensive healthcare platform designed to streamline and enhance the healthcare experience for providers, practitioners, patients, partners, and administrators. The project, still under active development, is Unify Technologies' flagship product aimed at revolutionizing healthcare management through technology.`,
+                developmentJourney: {
+                    initialDevelopmentPhase: [
+                        `From the ground up, our team developed five essential micro apps: Provider, Practitioner, Patient, Partner, and UnifyCare Admin.`,
+                        `Each app was designed to cater to the specific needs of its user base, ensuring a seamless and efficient workflow.`
+                    ],
+                    unifyCareWebsite: [
+                        `Alongside the micro apps, we created the UnifyCare product website to provide a central hub for information and access.`
+                    ]
+                },
+                featureDevelopmentAndBugFixing: [
+                    `I played a key role in developing new features and functionalities across all micro apps, ensuring that each component was robust, user-friendly, and efficient.`,
+                    `Post-release, I was actively involved in fixing bugs, ensuring that our product maintained high standards of performance and reliability.`
+                ],
+                fhirIntegration: [
+                    `A notable feature of UnifyCare is the integration of FHIR (Fast Healthcare Interoperability Resources) for out-patients within the Practitioner and Patient apps.`,
+                    `This integration enabled a seamless workflow from patient registration and hospital creation to doctor consultations and prescription management.`
+                ],
+                alphaVersionRelease: [
+                    `For the initial alpha release, we utilized a tech stack comprising React TypeScript, Chakra-UI for UI components, Storybook for UI component development, and Axios for API integration.`
+                ],
+                uiOverhaulAndBetaVersion: [
+                    `After the alpha release, we undertook a comprehensive UI overhaul.`,
+                    `We migrated from Chakra-UI to Tailwind CSS, enhancing the visual appeal and responsiveness of the application.`,
+                    `Additionally, we shifted to using Remix for API integration, replacing Axios.`,
+                    `Within 3-4 months, we completed the new version of UnifyCare, incorporating additional features and improving the efficiency of existing functions, culminating in the beta version release.`
+                ],
+                clientFeedbackAndIteration: [
+                    `Following the beta release, prestigious hospitals like Rainbow and KIMS started using our product, providing valuable feedback.`,
+                    `Our team diligently addressed their feedback, implementing improvements and delivering an enhanced version of UnifyCare within a month.`
+                ],
+                technologiesUsed: [
+                    `Frontend: React TypeScript, Chakra-UI (initially), Tailwind CSS (post-alpha), Storybook.`,
+                    `API Integration: Axios (initially), Remix (post-alpha).`
+                ],
+                myContributions: [
+                    `Development and enhancement of micro apps and features.`,
+                    `Comprehensive bug fixing and performance optimization post-releases.`,
+                    `Active involvement in FHIR integration, ensuring seamless interoperability for out-patients.`,
+                    `Significant contributions to the UI overhaul, improving user experience and application efficiency.`,
+                    `Collaborating closely with clients to incorporate feedback and deliver an improved product version.`
+                ]
+            },
         },
         {
+            id: 1,
             companyLogo: _walkover,
             title: 'Frontend Developer Intern',
             company: 'Walkover',
@@ -35,6 +84,7 @@ const library = {
             ],
         },
         {
+            id: 2,
             companyLogo: _highradius,
             title: 'Trainee - Highako Product',
             company: 'HighRadius',
