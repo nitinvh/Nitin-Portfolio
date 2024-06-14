@@ -75,6 +75,7 @@ const library = {
             employmentType: 'Internship',
             duration: 'Jan 2022 - Jul 2022 · 7 mos',
             location: 'Remote',
+            linkedinUrl: `https://www.linkedin.com/company/walkover/`,
             responsibilities: [
                 "Developed strong problem-solving skills by troubleshooting complex issues during the internship period.",
                 "Assisted in the development and maintenance of web applications using HTML, CSS, and JavaScript.",
@@ -82,6 +83,29 @@ const library = {
                 "Participated in daily stand-ups and contributed to sprint planning sessions.",
                 "Optimized web applications for maximum speed and scalability."
             ],
+            aboutProject: {
+                about: `As a Software Development Engineer Intern at Walkover, I primarily focused on frontend development, contributing to the Hello micro-app, which is part of MSG91, the flagship product of the company. My internship involved fixing bugs and refactoring code to enhance the app's performance and maintainability. Working closely with the development team, I played a crucial role in ensuring a smooth user experience for the app's users.`,
+                projectOverview: `MSG91 is the flagship product of Walkover, providing robust messaging solutions. As a Software Development Engineer Intern, I was primarily involved in frontend development, contributing to the Hello micro-app.`,
+                developmentJourney: {
+                    initialDevelopmentPhase: [
+                        `I joined the team working on the Hello micro-app, which is part of the broader MSG91 product suite. My main responsibilities included fixing bugs and refactoring code to enhance the performance and maintainability of the app.`,
+                    ],
+                },
+                featureDevelopmentAndBugFixing: [
+                    `Focused on identifying and resolving bugs within the Hello micro-app to ensure a smooth user experience.`,
+                    `Refactored existing code to improve readability, reduce technical debt, and enhance the application's overall performance.`,
+                ],
+                technologiesUsed: [
+                    `Frontend: Mention specific technologies and frameworks used, e.g., React, JavaScript, CSS.`,
+                    `Version Control: Git for managing and collaborating on code changes.`,
+                    `Issue Tracking: Used tools like Jira or Trello for tracking bugs and tasks.`,
+                ],
+                myContributions: [
+                    `Successfully fixed critical bugs that improved the app's stability and user satisfaction.`,
+                    `Refactored significant portions of the codebase, leading to better performance and easier future maintenance.`,
+                    `Collaborated with the development team to implement best practices and ensure code quality.`,
+                ],
+            },
         },
         {
             id: 2,
@@ -98,6 +122,36 @@ const library = {
                 "Participated in code reviews and provided constructive feedback to peers.",
                 "Created and maintained technical documentation to support development processes."
             ],
+            linkedinUrl: `https://www.linkedin.com/company/highradius/`,
+            aboutProject: {
+                about: `I joined HighRadius as a summer intern for one month, where I worked on React and frontend-related technologies. This was my first exposure to web technology and based on my performance, I was offered a paid internship for the next six months`,
+                developmentJourney: {
+                    initialDevelopmentPhase: [
+                        `Initially, I was provided with materials to learn React.`,
+                        `At the end of the learning period, I was given a project and had to take a test on my learnings.`
+                    ],
+                    testAndProject: [
+                        `I cleared the test with a high score and completed the project successfully.`,
+                        `Based on my performance, I was offered a paid internship for the next six months.`
+                    ],
+                },
+                featureDevelopmentAndBugFixing: [
+                    `I worked with the order-to-cash product team.`,
+                    `Most of my tasks involved bug fixes and UI changes.`
+                ],
+                workCulture: [
+                    `Throughout my tenure at HighRadius, I enjoyed the work culture and learned a lot.`
+                ],
+                technologiesUsed: [
+                    `Frontend: React`
+                ],
+                myContributions: [
+                    `Learning and applying React in a real-world project.`,
+                    `Clearing a comprehensive test on my React knowledge with a high score.`,
+                    `Developing and improving the order-to-cash product through bug fixes and UI enhancements.`,
+                    `Embracing and enjoying the positive work culture at HighRadius.`
+                ]
+            }
         },
     ],
 };

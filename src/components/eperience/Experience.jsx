@@ -1,17 +1,26 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import library from "../library";
+import { useNavigate } from "react-router-dom";
 
 const {experiences} = library;
 
-
 const Experience = () => {
+
+  const navigate = useNavigate();
+
+  const handleOnClick = (id) => {
+    sessionStorage.setItem('id',id);
+    navigate('/detail-view');
+  
+  }
+
   return (
     <div className="mt-6 ">
       <div className="mx-5">
         <h2 className="fw-bolder text-start mb-5 custom-font-size pt-5 text-light">Experience</h2>
         {experiences.map((exp, index) => (
-          <div key={index} className={`card bg-dark mb-3 border-bottom border-bottom border-0 mb-5 py-5 custom-border-color`}>
+          <div key={index} className={`card bg-dark mb-3 border-bottom border-bottom border-0 rounded-0 mb-5 py-5 custom-border-color point`} onClick={()=>handleOnClick(exp?.id)}>
             <div className="row g-0">
               {/* Left Side: Company Logo and Summary */}
               <div className="col-lg-4 d-flex align-items-center justify-content-center p-3 flex-column">

@@ -2,17 +2,41 @@ import React, { useEffect, useState } from "react";
 import library from "../library";
 import linkedinIcon from '../../assets/linkedin.png'; // Path to your LinkedIn icon image
 import UnifyDetailView from "./UnifyDetailView";
+import WalkoverDetailView from "./WalkoverDetailView";
+import HighRadiusDetailView from "./HighRadiusDetailView";
 
 const { experiences } = library;
 
+const detailViewCompRender ={
+    0: <UnifyDetailView aboutProject={experiences[0]?.aboutProject} />,
+    1: <WalkoverDetailView />,
+
+}
+
 const DetailView = () => {
     const [experience, setExperience] = useState({});
+    
     useEffect(() => {
         const id = sessionStorage.getItem('id') || 0;
         const exp = experiences[id];
         setExperience(exp);
     }, []);
-    const { aboutProject } = experience;
+    const {id, aboutProject} = experience;
+    const renderApp = () => {
+        console.log('here--', id)
+        if (id==0)    return <UnifyDetailView aboutProject={aboutProject} />;
+        else if (id==1) { 
+            return <WalkoverDetailView aboutProject={aboutProject} />;
+        }
+        else if (id==2){
+            return <HighRadiusDetailView aboutProject={aboutProject} />;
+        }
+
+        else {
+            return <div className="text-center custom-font-size text-theme-color">No Detail-View page found</div>
+        }
+    }
+    
     return (
         <div className="bg-dark">
             <div className="card border-0 bg-dark">
@@ -30,9 +54,7 @@ const DetailView = () => {
                                 <p className="card-text fs-3 fourth-theme-color">{experience.duration}</p>
                                 <p className="card-text fs-3 fourth-theme-color">{experience.location}</p>
                             </div>
-                            {experience.aboutProject && (
-                                <UnifyDetailView aboutProject={aboutProject} />
-                            )}
+                            {renderApp()}
                         </div>
                     </div>
                 </div>
