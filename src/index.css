@@ -110,7 +110,7 @@ body::-webkit-scrollbar-thumb {
 
 .skill-carousel {
   display: flex;
-  animation: scroll 20s linear infinite;
+  animation: scroll 10s linear infinite;
 }
 
 @keyframes scroll {
@@ -138,4 +138,12 @@ body::-webkit-scrollbar-thumb {
 
 .custom-border-color {
   border-color: #ffc107 !important;
+}
+
+.point:hover {
+  cursor: pointer;
+}
+
+.custom-color{
+  background-color: #ffc107 !important;
 }
