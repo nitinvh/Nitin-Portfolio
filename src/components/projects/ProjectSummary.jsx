@@ -18,15 +18,14 @@ const ProjectSummary = ({ project, id }) => {
     );
 
     return (
-
-        <div onClick={handleClick} className="project-summary py-5 point">
+        <div onClick={handleClick} className="project-summary py-5">
             <div className="d-flex justify-content-center align-items-center">
                 <OverlayTrigger
                     placement="top"
                     delay={{ show: 250, hide: 400 }}
                     overlay={renderTooltip}
                 >
-                    <div className="col-md-4 text-start">
+                    <div className="col-md-4 text-start point mx-5">
 
                         <h2 className="text-theme-color fs-1 mb-5">{project.name}</h2>
                         <p className="fs-3 fourth-theme-color">{project.description}</p>
