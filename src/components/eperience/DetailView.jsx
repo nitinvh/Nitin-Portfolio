@@ -1,17 +1,10 @@
 import React, { useEffect, useState } from "react";
 import library from "../library";
-import linkedinIcon from '../../assets/linkedin.png'; // Path to your LinkedIn icon image
 import UnifyDetailView from "./UnifyDetailView";
 import WalkoverDetailView from "./WalkoverDetailView";
 import HighRadiusDetailView from "./HighRadiusDetailView";
 
 const { experiences } = library;
-
-const detailViewCompRender ={
-    0: <UnifyDetailView aboutProject={experiences[0]?.aboutProject} />,
-    1: <WalkoverDetailView />,
-
-}
 
 const DetailView = () => {
     const [experience, setExperience] = useState({});
