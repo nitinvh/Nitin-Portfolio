@@ -11,7 +11,7 @@ const Experience = () => {
 
   const handleOnClick = (id) => {
     sessionStorage.setItem('id',id);
-    navigate('/detail-view');
+    navigate('/experience-detail-view');
   
   }
 
@@ -20,12 +20,12 @@ const Experience = () => {
       <div className="mx-5">
         <h2 className="fw-bolder text-start mb-5 custom-font-size pt-5 text-light">Experience</h2>
         {experiences.map((exp, index) => (
-          <div key={index} className={`card bg-dark mb-3 border-bottom border-bottom border-0 rounded-0 mb-5 py-5 custom-border-color point`} onClick={()=>handleOnClick(exp?.id)}>
-            <div className="row g-0">
+          <div key={index} className={`card bg-dark border-bottom border-bottom border-0 rounded-0 py-5 custom-border-color point`} onClick={()=>handleOnClick(exp?.id)}>
+            <div className="row g-0 mb-5">
               {/* Left Side: Company Logo and Summary */}
               <div className="col-lg-4 d-flex align-items-center justify-content-center p-3 flex-column">
-                <img src={exp.companyLogo} className="img-fluid rounded-circle border border-4  mb-3" alt={`${exp.company} logo`} style={{ width: '80px', height: '80px' }} />
-                <div className="text-center text-light">
+                <img src={exp.companyLogo} className="img-fluid rounded-circle border border-4  mb-3" alt={`${exp.company} logo`} style={{ width: '10rem', height: '10rem' }} />
+                <div className="text-center text-light mt-3">
                   <h5 className="card-title fs-2 text-theme-color">{exp.title}</h5>
                   <p className="card-text fs-1 "><strong>{exp.company}</strong> · <span className="third-theme-clr">{exp.employmentType}</span></p>
                   <p className="card-text fs-3 fourth-theme-color">{exp.duration}</p>

@@ -7,6 +7,8 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import ErrorPage from './components/ErrorPage.jsx';
 import DetailView from './components/eperience/DetailView.jsx';
 import MyNavbar from './components/Navbar.jsx';
+import Footer from './components/Footer.jsx';
+import ProjectDetailView from './components/projects/ProjectDetailView.jsx';
 
 const router = createBrowserRouter([
   {
@@ -15,10 +17,20 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />
   },
   {
-    path: '/detail-view',
+    path: '/experience-detail-view',
     element: <>
       <MyNavbar />
       <DetailView />
+      <Footer />
+    </>,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/project-detail-view',
+    element: <>
+      <MyNavbar />
+      <ProjectDetailView />
+      <Footer />
     </>,
     errorElement: <ErrorPage />,
   },

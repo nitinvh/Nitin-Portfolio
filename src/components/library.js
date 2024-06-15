@@ -154,6 +154,67 @@ const library = {
             }
         },
     ],
+    projects: [
+        {
+            id:0,
+          name: "RideEasy",
+          desc: "RideEasy is a comprehensive taxi management web application designed to simplify urban transportation. It comprises three micro apps: Rider, Driver, and Admin. The Rider app allows users to manage their accounts, save card details, book rides, and view routes on Google Maps with real-time fare estimation. The Driver app enables drivers to manage their profiles, receive ride requests, and control ride completion. The Admin app offers tools for reviewing and approving driver applications, ensuring a seamless and efficient ride experience for all users.",
+          description: "I developed a Taxi management web app named RideEasy, I created 3 micro apps (Rider, Driver, and Admin apps).",
+          details:["Developed a Taxi management web app with 3 micro apps (Rider, Driver, and Admin apps).",
+          "Rider app: Users can manage accounts, card details, and book rides.",
+          "Driver app: Drivers can manage their status, view ride requests, and complete rides.",
+          "Admin app: Admins can review and manage driver accounts.",
+          "Implemented Google Maps for route display and fare estimation.",
+          "Focused on providing a seamless ride booking and management experience."],
+
+          microApps: [
+            {
+              name: "Rider-app",
+              features: [
+                "Manage RideEasy account, card details, and book rides.",
+                "View route on Google Map displayed on the dashboard page, with distance and fare.",
+                "Cancel the ride after request.",
+                "Ride is accepted by an available driver.",
+                "Driver has control to complete the ride."
+              ]
+            },
+            {
+              name: "Driver-app",
+              features: [
+                "Sign-up and manage account by adding or updating onboarding details.",
+                "Admin verification and approval for new users or edited onboarding details.",
+                "Update status (available/not-available).",
+                "View and accept ride requests from users (one request at a time).",
+                "Driver has control to complete the ride."
+              ]
+            },
+            {
+              name: "Admin-app",
+              features: [
+                "Manage driver accounts.",
+                "Review driver details and approve or reject."
+              ]
+            }
+          ]
+        },
+        {
+            id:1,
+          name: "NLP-for-Review-detecting-system",
+          desc: "This project was done during my B.Tech time and focused on natural language processing (NLP) techniques to analyze customer reviews. It involved extensive exploratory data analysis (EDA) of review data and using relevant libraries to transform textual reviews into structured data. The project employed a Bag-of-Words model for sentiment analysis, classifying reviews as positive or negative. An SVM classifier was then used to train the model and predict the sentiment of new reviews.",
+          description: "This project was done during my B.Tech time. It involved EDA of review data and using relevant libraries to change the reviews to data.",
+          details:["Implemented during my B.Tech as a project.",
+          "Performed EDA on review data and utilized libraries for data transformation.",
+          "Used Bag-of-Words model for sentiment analysis.",
+          "Generated boolean values for Good or Bad reviews.",
+          "Trained and predicted reviews using SVM classifier.",
+          "Demonstrated effective sentiment analysis and machine learning techniques."],
+          steps: [
+            "Performed EDA of review data.",
+            "Used bag-of-words model for sentimental analysis to generate Good or Bad review (boolean target variable).",
+            "Used SVM classifier to train and predict whether the given review is good or bad."
+          ]
+        }
+      ]
 };
 
 export default library;
