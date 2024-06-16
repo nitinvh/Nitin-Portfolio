@@ -111,7 +111,7 @@ body::-webkit-scrollbar-thumb {
 
 .skill-carousel {
   display: flex;
-  animation: scroll 10s linear infinite;
+  animation: scroll 16s linear infinite;
 }
 
 @keyframes scroll {

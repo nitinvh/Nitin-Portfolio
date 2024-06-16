@@ -6,15 +6,21 @@ import _Remix from '../assets/remix.png';
 import _TailWind from '../assets/tailWind.png';
 import _Chakra from '../assets/chakra.png';
 import _StoryBook from '../assets/storyBook.png';
+import _Git from '../assets/git.png';
+import _Typescript from '../assets/typescript.png';
+import _ScikitLearn from '../assets/scikitlearn.png'
 
 const skills = [
     { name: 'JavaScript', img: _JavaScript },
+    { name: 'Typescript', img: _Typescript },
+    { name: 'Python', img: _Python },
     { name: 'React', img: _React },
     { name: 'Remix', img: _Remix },
+    { name: 'Git', img: _Git },
+    { name: 'Scikit Learn', img: _ScikitLearn },
     { name: 'Tailwind CSS', img: _TailWind },
     { name: 'Chakra UI', img: _Chakra },
     { name: 'Storybook', img: _StoryBook },
-    { name: 'Python', img: _Python }
 ];
 
 const SkillCarousel = () => {
