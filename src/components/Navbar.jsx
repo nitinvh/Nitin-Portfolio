@@ -7,8 +7,8 @@ const MyNavbar = () => {
         <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
             <div className="w-100 d-flex justify-content-between mx-5">
                 <Navbar.Brand href="/" className="fs-1 hover-effect d-flex justify-content-center align-items-center">
-                    <img src={Home} className="me-2" />
-                    Home
+                    <img src={Home} className="me-3" />
+                    Nitin-Portfolio
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
@@ -18,6 +18,7 @@ const MyNavbar = () => {
                         <Nav.Link href="#about-me" className="fs-2 hover-effect">About Me</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
+                
             </div>
         </Navbar>
     );

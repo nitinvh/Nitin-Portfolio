@@ -74,7 +74,7 @@ const library = {
             company: 'Walkover',
             employmentType: 'Internship',
             duration: 'Jan 2022 - Jul 2022 · 7 mos',
-            location: 'Remote',
+            location: '',
             linkedinUrl: `https://www.linkedin.com/company/walkover/`,
             responsibilities: [
                 "Developed strong problem-solving skills by troubleshooting complex issues during the internship period.",
@@ -114,7 +114,7 @@ const library = {
             company: 'HighRadius',
             employmentType: 'Internship',
             duration: 'Aug 2021 - Jan 2022 · 6 mos',
-            location: 'Remote',
+            location: '',
             responsibilities: [
                 "Learned ReactJS and frontend related skills during my training period and helped my team to fix bugs and maintain stability.",
                 "Assisted in the development of front-end components and reusable libraries.",
