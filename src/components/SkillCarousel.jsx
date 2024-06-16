@@ -20,17 +20,17 @@ const skills = [
 const SkillCarousel = () => {
     return (
         <div className="skill-carousel-container text-light py-5 mx-5 mt-5">
-            <h1 className="fw-bolder text-start mb-5 custom-font-size">Skills</h1>
+            <h1 className="fw-bolder text-start mb-5 custom-font-size" id='skills'>Skills</h1>
             <div className="skill-carousel d-flex pt-5">
                 {skills.map((skill, index) => (
-                    <div className="skill-item text-center mx-3 d-flex justify-content center align-items-center" key={index}>
+                    <div className="skill-item text-center mx-3 d-flex justify-content-center align-items-center" key={index}>
                         <img src={skill.img} alt={skill.name} className="skill-img img-fluid mx-2 h-4" />
                         <p className="ps-3 w-22 text-start">{skill.name}</p>
                     </div>
                 ))}
                 {/* Duplicate skills for seamless loop */}
                 {skills.map((skill, index) => (
-                    <div className="skill-item text-center mx-3 d-flex justify-content center align-items-center" key={`duplicate-${index}`}>
+                    <div className="skill-item text-center mx-3 d-flex justify-content-center align-items-center" key={`duplicate-${index}`}>
                         <img src={skill.img} alt={skill.name} className="skill-img img-fluid mx-2 h-4" />
                         <p className="ps-3 w-22 text-start">{skill.name}</p>
                     </div>

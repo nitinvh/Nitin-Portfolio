@@ -26,7 +26,7 @@ const Experience = () => {
   return (
     <div className="mt-6 ">
       <div className="mx-5">
-        <h2 className="fw-bolder text-start mb-5 custom-font-size pt-5 text-light" id='#experience'>Experience</h2>
+        <h2 className="fw-bolder text-start mb-5 custom-font-size pt-5 text-light" id='experience'>Experience</h2>
         {experiences.map((exp, index) => (
           <div key={index} className={`card bg-dark border-bottom border-bottom border-0 rounded-0 py-5 custom-border-color`} onClick={() => handleOnClick(exp?.id)}>
 
