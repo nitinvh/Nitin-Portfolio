@@ -24,9 +24,9 @@ const MyNavbar = () => {
                     <img src={Home} className="me-3" />
                     Nitin-Portfolio
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" className="ms-3" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="ms-auto">
+                <Navbar.Toggle aria-controls="basic-navbar-nav" className="me-1" />
+                <Navbar.Collapse id="basic-navbar-nav" className="">
+                    <Nav className="ms-auto ps-3">
                     <Nav.Link href="/#skills" className="fs-2 hover-effect me-3" onClick={(e) => handleScroll(e, 'skills')}>Skills</Nav.Link>
                         <Nav.Link href="/#experience" className="fs-2 hover-effect me-3" onClick={(e) => handleScroll(e, 'experience')}>Experience</Nav.Link>
                         <Nav.Link href="/#projects" className="fs-2 hover-effect me-3" onClick={(e) => handleScroll(e, 'projects')}>Projects</Nav.Link>

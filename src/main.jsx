@@ -9,6 +9,7 @@ import DetailView from './components/eperience/DetailView.jsx';
 import MyNavbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
 import ProjectDetailView from './components/projects/ProjectDetailView.jsx';
+import AllSkills from './components/skills/AllSkills.jsx';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,15 @@ const router = createBrowserRouter([
     element: <>
       <MyNavbar />
       <ProjectDetailView />
+      <Footer />
+    </>,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/all-skills',
+    element: <>
+      <MyNavbar />
+      <AllSkills />
       <Footer />
     </>,
     errorElement: <ErrorPage />,

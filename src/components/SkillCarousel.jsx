@@ -8,7 +8,8 @@ import _Chakra from '../assets/chakra.png';
 import _StoryBook from '../assets/storyBook.png';
 import _Git from '../assets/git.png';
 import _Typescript from '../assets/typescript.png';
-import _ScikitLearn from '../assets/scikitlearn.png'
+import _ScikitLearn from '../assets/scikitlearn.png';
+import { useNavigate } from "react-router-dom";
 
 const skills = [
     { name: 'JavaScript', img: _JavaScript },
@@ -24,8 +25,12 @@ const skills = [
 ];
 
 const SkillCarousel = () => {
+    const navigate = useNavigate();
+    const handleOnclick = () => {
+        navigate('/all-skills');
+    }
     return (
-        <div className="skill-carousel-container text-light py-5 mx-5 mt-5">
+        <div className="skill-carousel-container text-light py-5 mx-5 mt-5 point" onClick={handleOnclick}>
             <h1 className="fw-bolder text-start mb-5 custom-font-size" id='skills'>Skills</h1>
             <div className="skill-carousel d-flex pt-5">
                 {skills.map((skill, index) => (
