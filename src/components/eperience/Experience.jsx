@@ -10,6 +10,11 @@ const { experiences } = library;
 const Experience = () => {
 
   const navigate = useNavigate();
+  const handleOnClick = (id) => {
+    sessionStorage.setItem('id', id);
+    navigate('/experience-detail-view');
+
+  }
 
   // const renderTooltip = (props) => (
   //   <Tooltip id="button-tooltip" className='fs-5 fw-bolder' {...props}>
@@ -53,7 +58,7 @@ const Experience = () => {
                     </ul>
                   )}
                   <div className="w-100 text-start ms-3">
-                    <a className="fs-5 text-primary" href="/experience-detail-view">More details</a>
+                    <a className="fs-5 text-primary" onClick={handleOnClick}>More details</a>
                   </div>
                 </div>
               </div>
