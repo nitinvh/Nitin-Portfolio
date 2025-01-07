@@ -58,7 +58,7 @@ const Experience = () => {
                     </ul>
                   )}
                   <div className="w-100 text-start ms-3">
-                    <a className="fs-5 text-primary" onClick={handleOnClick}>More details</a>
+                    <a className="fs-5 text-primary point" onClick={() => handleOnClick(exp?.id)}>More details</a>
                   </div>
                 </div>
               </div>
