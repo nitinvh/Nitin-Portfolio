@@ -16,6 +16,7 @@ const ProjectSummary = ({ project, id }) => {
     //         Click me for detail view
     //     </Tooltip>
     // );
+  console.log(id)
 
     return (
         <div className="py-5">
@@ -37,9 +38,10 @@ const ProjectSummary = ({ project, id }) => {
                             <li key={index} className="fs-3 text-start third-theme-clr">{detail}</li>
                         ))}
                     </ul>
-                    <div className="w-100 text-start ms-3">
+                    {/* {(id==0)? <div className="w-100 text-start ms-3">
                         <a className="fs-5 text-primary point" onClick={handleClick}>More details</a>
-                    </div>
+                    </div>: <span></span>} */}
+                    
                 </Col>
             </Row>
             <hr className='text-light mt-6' />

@@ -287,6 +287,109 @@ const library = {
           ]
         },
         {
+            id: 2,
+            name: "Conversational RAG with PDF Upload and Memory",
+            desc: "This project solves the problem of unstructured data retrieval by allowing users to have a natural conversation with their PDF documents. The application, built with Streamlit, provides an interface to upload a PDF. On the backend, a full Retrieval-Augmented Generation (RAG) pipeline built with LangChain processes, chunks, and vectorizes the document using Google Embeddings. The vectors are stored in an in-memory ChromaDB. A key feature is the history-aware conversational memory, which allows the system to understand follow-up questions and provide contextually relevant, accurate answers grounded in the source document, powered by the Groq LLM.",
+            description: "A conversational AI app that allows users to 'chat' with their PDF documents, built with a history-aware RAG pipeline using LangChain and Streamlit.",
+            details: [
+              "Developed a conversational AI application using Streamlit to solve unstructured data retrieval.",
+              "Allows users to upload and interact with PDF documents through a natural language chat interface.",
+              "Implemented a full, history-aware Retrieval-Augmented Generation (RAG) pipeline using LangChain.",
+              "Engineered conversational memory to understand follow-up questions for context-aware answers.",
+              "Utilized ChromaDB as the in-memory vector store for document embeddings.",
+              "Powered by Groq LLM and Google Embeddings to provide fast, accurate, and grounded responses."
+            ],
+            steps: [
+              "User uploads a PDF document via the Streamlit interface.",
+              "LangChain processes, chunks, and vectorizes the document content using Google Embeddings.",
+              "Vectorized data is stored in an in-memory ChromaDB vector store.",
+              "User asks a question, which is enhanced by the conversational memory.",
+              "The system retrieves relevant chunks (RAG) and feeds them to the Groq LLM to generate a grounded answer."
+            ]
+          },
+          {
+            id: 3,
+            name: "Data Analyzer GPT: AI-Powered Data Analysis with AutoGen",
+            desc: "This project addresses the data analysis bottleneck for non-technical users. It's an intelligent system, built with the AutoGen framework, that allows users to get complex insights from datasets simply by asking questions in natural language. It features a multi-agent workflow where an 'AI Analyst' agent (powered by Google Gemini or OpenAI) automatically generates Python and Pandas code to perform the analysis. This code is then passed to an 'Executor' agent, which runs it securely within a Docker container to prevent unsafe operations and protect the host system, providing instant and accurate insights.",
+            description: "An AI-powered data analysis tool where users can get insights from datasets just by asking questions in natural language, using AutoGen and a secure Docker executor.",
+            details: [
+              "Solved the data analysis bottleneck for non-technical users.",
+              "Developed an intelligent system using the AutoGen framework that understands natural language queries.",
+              "Engineered a multi-agent workflow with distinct AI analyst and executor agent roles.",
+              "The analyst agent (Gemini/OpenAI) auto-generates Python (Pandas) code for analysis.",
+              "Code is executed securely in a Docker container to ensure safety and prevent code injection.",
+              "Provides instant data insights based on simple English questions."
+            ],
+            steps: [
+              "User provides a dataset and asks a natural language query (e.g., 'What is the average sales price per region?').",
+              "The AutoGen framework coordinates the multi-agent workflow.",
+              "An 'AI Analyst' agent generates the appropriate Python (Pandas) code to answer the query.",
+              "The code is passed to an 'Executor' agent.",
+              "The Executor agent securely runs the code within a Docker container.",
+              "The final result (a number, table, or insight) is returned to the user."
+            ]
+          },
+          {
+            id: 4,
+            name: "Agentic Q&A Assistant with LangGraph",
+            desc: "This project was built to solve the problem of inconsistent query-answering and AI 'hallucinations'. It's an advanced agentic system that uses a LangGraph multi-node graph architecture to intelligently route user queries to the most appropriate information source. The system features a supervised workflow that directs tasks between three paths: a RAG pipeline (using LangChain and Pinecone) for document-specific questions, a direct LLM call (Google Gemini) for general knowledge, and a real-time web search (Tavily) for current events. A critical 'validation node' ensures factual accuracy by checking the answer's quality and source before returning it to the user via the Streamlit interface.",
+            description: "An advanced Q&A system that uses LangGraph to route queries to the best source (RAG, Web Search, LLM) and validates all answers for factual accuracy.",
+            details: [
+              "Solved inconsistent query-answering by developing an advanced agentic system.",
+              "Built on a LangGraph multi-node graph architecture for intelligent query routing.",
+              "Engineered a supervised workflow with a validation node to ensure factual accuracy.",
+              "Dynamically routes tasks between a RAG pipeline (LangChain/Pinecone) for document queries.",
+              "Utilizes a direct LLM call (Google Gemini) for general knowledge.",
+              "Performs real-time web searches (Tavily) for up-to-date information."
+            ],
+            steps: [
+              "A user submits a query via the Streamlit interface.",
+              "A LangGraph routing node analyzes the query's intent (document-based, general, or current event).",
+              "The graph routes the query to the correct tool: RAG from Pinecone, Google Gemini LLM, or Tavily web search.",
+              "The selected tool generates a preliminary answer.",
+              "The answer is sent to a 'validation node' to check for factual accuracy.",
+              "If the answer is valid, it is returned to the user; otherwise, the graph can re-route the query."
+            ]
+          },
+          {
+            id: 5,
+            name: "AI-Driven Content and Campaign Generation Tool",
+            desc: "This project solves the challenge of slow, manual content creation for marketing. It is an autonomous multi-agent system, architected with AutoGen and LangGraph, that orchestrates a 'team' of specialized AI agents to generate long-form articles and create corresponding multi-platform social media campaigns. It uses a 'Selector-Planner-Team' architecture where agents collaborate to perform research (using Tavily Search and Wikipedia), write articles, and build a campaign strategy. A key component is the built-in 'human-in-the-loop' (HITL) approval process, which allows a human to review, edit, and give final approval before any content is finalized, ensuring high quality and control.",
+            description: "An autonomous multi-agent system that orchestrates a 'team' of AI agents to research, write long-form articles, and create social media campaigns with human approval.",
+            details: [
+              "Solved the challenge of manual content creation by architecting an autonomous multi-agent system.",
+              "Uses a combination of AutoGen and LangGraph for robust agent orchestration.",
+              "Implemented a 'Selector-Planner-Team' architecture to manage complex, multi-step tasks.",
+              "Specialized AI agents (Researcher, Writer, Strategist) collaborate to complete the workflow.",
+              "Integrates Tavily Search and Wikipedia APIs for real-time, factual research.",
+              "Features a 'human-in-the-loop' (HITL) node for final quality control and approval."
+            ],
+            microApps: [ // Re-using the 'microApps' key to represent 'agentRoles'
+              {
+                name: "Selector & Planner Agents",
+                features: [
+                  "Selector Agent analyzes the initial user prompt and selects the correct agent team.",
+                  "Planner Agent receives the task and breaks it down into a detailed, step-by-step plan."
+                ]
+              },
+              {
+                name: "Execution Agent Team",
+                features: [
+                  "Researcher Agent: Executes the plan by gathering information using Tavily Search and Wikipedia APIs.",
+                  "Writer Agent: Analyzes the research and drafts a long-form article.",
+                  "Strategist Agent: Creates a multi-platform social media campaign based on the article."
+                ]
+              },
+              {
+                name: "Human-in-the-Loop (HITL)",
+                features: [
+                  "The final generated content is sent to a human for review.",
+                  "The human can approve, reject, or provide feedback for revision, ensuring final quality."
+                ]
+              }
+            ]
+          },
+        {
             id:1,
           name: "NLP-for-Review-detecting-system",
           desc: "This project was done during my B.Tech time and focused on natural language processing (NLP) techniques to analyze customer reviews. It involved extensive exploratory data analysis (EDA) of review data and using relevant libraries to transform textual reviews into structured data. The project employed a Bag-of-Words model for sentiment analysis, classifying reviews as positive or negative. An SVM classifier was then used to train the model and predict the sentiment of new reviews.",
