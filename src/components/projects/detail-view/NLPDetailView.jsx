@@ -1,8 +1,10 @@
 import React from 'react';
+import BackButton from '../../Back';
 
 const NLPDetailView = ({ project }) => {
     return (
         <div className="bg-dark">
+            <div className='ms-5'><BackButton /></div>
             <div className='mx-6'>
                 <div className="border-bottom border-0 custom-border-color py-6">
                     <h2 className="custom-font-size text-theme-color mb-4">{project.name} Project</h2>

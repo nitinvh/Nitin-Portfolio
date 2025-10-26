@@ -1,4 +1,5 @@
 import React from "react";
+import BackButton from "../Back";
 
 const KridAiDetailView = (props) => {
     const { aboutProject } = props;

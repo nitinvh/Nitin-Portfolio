@@ -5,6 +5,7 @@ import WalkoverDetailView from "./WalkoverDetailView";
 import HighRadiusDetailView from "./HighRadiusDetailView";
 import KridAiDetailView from "./KridAIDetailView";
 import _notFound from '../../assets/not_found.png'
+import BackButton from "../Back";
 
 const { experiences } = library;
 
@@ -50,6 +51,7 @@ const DetailView = () => {
     
     return (
         <div className="bg-dark">
+            <div className="ms-5"><BackButton /></div>
             <div className="card border-0 bg-dark">
                 <div className="text-center mb-4 pt-5">
                     <a href={experience.linkedinUrl} target="_blank" rel="noopener noreferrer">
