@@ -11,7 +11,12 @@ const Footer = () => {
                     <div className="col-md-5 px-5">
                     <h5 className="fs-1 text-theme-color" id="about-me">About Me</h5>
                         <p className="fs-3 sec-txt-theme-clr">
-                            I am a passionate Software Development Engineer with experience in frontend technologies. I have worked on various projects, delivering high-quality, user-centric solutions.
+                        As an enthusiastic professional deeply immersed in Generative AI and Agentic AI, I bring a unique blend of software development expertise and a forward-thinking approach to artificial intelligence. My goal is to leverage my experience in building high-quality, user-centric solutions to create intelligent, autonomous systems that solve complex, real-world problems.</p>
+                        <p className="fs-3 sec-txt-theme-clr">
+                        <span className="text-theme-color">A Note on My AI Journey 🚀</span>
+                        <div>
+I am on a dedicated path to mastering AI. While I am not yet an expert, I am a passionate and fast learner, actively working on new challenges in this space.</div>
+
                         </p>
                     </div>
                     <div className="col-md-4  px-5">
@@ -37,7 +42,7 @@ const Footer = () => {
                 <hr />
                 <div className="row">
                     <div className="col-md-12 text-center">
-                        <p className="fs-3 text-theme-color py-2">&copy; 2024 Nitin-Portfolio. All rights reserved.</p>
+                        <p className="fs-3 text-theme-color py-2">&copy; 2025 Nitin-Portfolio. All rights reserved.</p>
                     </div>
                 </div>
             </div>

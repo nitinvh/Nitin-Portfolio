@@ -3,6 +3,8 @@ import library from "../library";
 import UnifyDetailView from "./UnifyDetailView";
 import WalkoverDetailView from "./WalkoverDetailView";
 import HighRadiusDetailView from "./HighRadiusDetailView";
+import KridAiDetailView from "./KridAIDetailView";
+import _notFound from '../../assets/not_found.png'
 
 const { experiences } = library;
 
@@ -17,16 +19,32 @@ const DetailView = () => {
     const {id, aboutProject} = experience;
     const renderApp = () => {
         console.log('here--', id)
-        if (id==0)    return <UnifyDetailView aboutProject={aboutProject} />;
-        else if (id==1) { 
+        if (id==0)    return <KridAiDetailView aboutProject={aboutProject} />;
+        if (id==2)    return <UnifyDetailView aboutProject={aboutProject} />;
+        else if (id==3) { 
             return <WalkoverDetailView aboutProject={aboutProject} />;
         }
-        else if (id==2){
+        else if (id==4){
             return <HighRadiusDetailView aboutProject={aboutProject} />;
         }
 
         else {
-            return <div className="text-center custom-font-size text-theme-color">No Detail-View page found</div>
+            return (
+                <div className="d-flex flex-column align-items-center text-center custom-font-size text-theme-color p-4">
+                    
+                    <img 
+                        src={_notFound} 
+                        alt="Page not found" 
+                        className="img-fluid" // Makes the image responsive
+                        style={{ maxWidth: '300px', marginBottom: '1.5rem' }} // Constrains size and adds space
+                    />
+            
+                    <h4 className="text-theme-color">
+                        No Detail-View page found
+                    </h4>
+                    <hr className='text-light mt-6' />
+                </div>
+            );
         }
     }
     

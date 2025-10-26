@@ -9,9 +9,17 @@ import _StoryBook from '../assets/storyBook.png';
 import _Git from '../assets/git.png';
 import _Typescript from '../assets/typescript.png';
 import _ScikitLearn from '../assets/scikitlearn.png';
+import _Langchain from '../assets/langchain.png';
+import _Langgraph from '../assets/langgraph.png';
+import _N8n from '../assets/n8n.png';
+import _Autogen from '../assets/autogen.png';
 import { useNavigate } from "react-router-dom";
 
 const skills = [
+    { name: 'Langchain', img: _Langchain },
+    { name: 'LangGraph', img: _Langgraph },
+    { name: 'n8n', img: _N8n },
+    { name: 'AutoGen', img: _Autogen },
     { name: 'JavaScript', img: _JavaScript },
     { name: 'Typescript', img: _Typescript },
     { name: 'Python', img: _Python },

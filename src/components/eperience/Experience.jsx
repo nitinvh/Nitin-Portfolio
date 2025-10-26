@@ -16,12 +16,6 @@ const Experience = () => {
 
   }
 
-  // const renderTooltip = (props) => (
-  //   <Tooltip id="button-tooltip" className='fs-5 fw-bolder' {...props}>
-  //     Click me for detail view
-  //   </Tooltip>
-  // );
-
   return (
     <div className="mt-6 ">
       <div className="mx-5">

@@ -9,12 +9,20 @@ import _StoryBook from '../../assets/storyBook.png';
 import _Git from '../../assets/git.png';
 import _Typescript from '../../assets/typescript.png';
 import _ScikitLearn from '../../assets/scikitlearn.png'
+import _Langchain from '../../assets/langchain.png';
+import _Langgraph from '../../assets/langgraph.png';
+import _N8n from '../../assets/n8n.png';
+import _Autogen from '../../assets/autogen.png';
 
 const skills = [
+    { name: 'Langchain', img: _Langchain, description: 'Proficient in LangChain for building LLM-powered applications and RAG pipelines.' },
+    { name: 'LangGraph', img: _Langgraph, description: 'Skilled in LangGraph for creating complex, stateful, and cyclical multi-agent AI systems.' },
+    { name: 'n8n', img: _N8n, description: 'Experienced in n8n for visually designing and automating complex workflows and AI agents.' },
+    { name: 'AutoGen', img: _Autogen, description: 'Experienced in AutoGen for developing conversational, multi-agent systems that can solve complex tasks.' },
     { name: 'JavaScript', img: _JavaScript, description: 'Experienced in JavaScript for developing dynamic web applications.' },
     { name: 'Typescript', img: _Typescript, description: 'Proficient in TypeScript for building scalable and maintainable codebases.' },
     { name: 'Python', img: _Python, description: 'Skilled in Python for data analysis and machine learning.' },
-    { name: 'React', img: _React, description: 'Expert in React for creating interactive user interfaces.' },
+    { name: 'React', img: _React, description: 'Experienced in React for creating interactive user interfaces.' },
     { name: 'Remix', img: _Remix, description: 'Experienced with Remix for building fast and secure web applications.' },
     { name: 'Git', img: _Git, description: 'Proficient in Git for version control and collaboration.' },
     { name: 'Scikit Learn', img: _ScikitLearn, description: 'Experienced in Scikit Learn for implementing machine learning algorithms.' },

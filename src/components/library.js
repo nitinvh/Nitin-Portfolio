@@ -1,11 +1,100 @@
 import _unify from '../assets/unify.png';
 import _walkover from '../assets/walkover.png';
 import _highradius from '../assets/highradius.png';
+import _krid from '../assets/krid_AI.png';
+import _uh from '../assets/uh.png';
 
 const library = {
     experiences: [
         {
             id: 0,
+            companyLogo: _krid, // Replace _krid with your imported logo variable
+            title: 'Agentic AI R&D Intern',
+            company: 'Krid.ai',
+            employmentType: 'Internship',
+            duration: 'Aug 2025 - Present', // Update with your start date
+            location: 'Remote',
+            responsibilities: [
+                "Architected and developed 'REVA' (Real Estate Virtual Assistant), an end-to-end agentic platform, from concept to a functional Proof-of-Concept.",
+                "Built the full-stack application, including a React/TypeScript frontend, Python/Flask APIs, and a MongoDB database to manage leads.",
+                "Engineered an autonomous agent using Vapi to place human-like conversational voice calls to new leads for qualification.",
+                "Designed and implemented a complex, multi-step workflow using LangGraph to manage the state of each lead (e.g., 'new', 'called', 'qualified').",
+                "Developed a natural language chat interface using LangChain and AutoGen, allowing brokers to query the database and manage leads via text."
+            ],
+            linkedinUrl: 'https://www.linkedin.com/company/krid-ai/', // Added a placeholder, update if needed
+            aboutProject: {
+                about: `As an Agentic AI R&D Intern, my primary role was to rapidly prototype and implement cutting-edge Proofs-of-Concept (POCs) for complex business problems using agentic AI frameworks. My flagship project was "REVA" (Real Estate Virtual Assistant).`,
+                projectOverview: `REVA is a comprehensive, autonomous platform designed to solve the lead generation and qualification bottleneck for real estate companies. It automates the entire process, from identifying potential leads to qualifying them via phone calls and providing a seamless management interface for brokers.`,
+                developmentJourney: {
+                    leadIdentification: [
+                        `The system's first task was to identify new leads. I used n8n to create a workflow that monitored the client's inbound email for new property inquiries from websites like nobroker.com and housing.com. When an email arrived with details of someone looking to buy or sell, the workflow automatically triggered, parsing their information and storing it as a new lead in the MongoDB database.`
+                    ],
+                    autonomousQualification: [
+                        `To solve the problem of manual cold calling, I integrated Vapi, a conversational voice AI. An autonomous agent would call the new lead, engage in a human-like conversation to gather more details (e.g., budget, location, timeline), and assess their potential.`
+                    ],
+                    statefulLeadManagement: [
+                        `A lead's journey is a multi-step process. I used LangGraph to engineer a stateful agentic workflow. Based on the Vapi call results, the system would autonomously update the lead's status (e.g., 'Potential', 'Not Interested'), qualify them, and schedule follow-ups.`
+                    ],
+                    brokerDashboardAndChat: [
+                        `To make the data accessible, I built a full-stack platform. The backend consisted of Python/Flask APIs to interact with the MongoDB database. The frontend, built with React and TypeScript, provided a dashboard for brokers.`,
+                        `The most powerful feature was a chat interface powered by LangChain and AutoGen. Brokers could type "Show me all potential leads in Austin" or "Update John Doe's status to 'Contacted'", and the AI agents would execute those tasks.`
+                    ]
+                },
+                technologiesUsed: [
+                    `AI/Agentic: LangChain, LangGraph, AutoGen, n8n, Vapi`,
+                    `Full-Stack: React, TypeScript, Python, Flask`,
+                    `Database: MongoDB`
+                ],
+                myContributions: [
+                    `End-to-end architecture and development of the REVA platform.`,
+                    `Integration of multiple agentic frameworks (n8n, Vapi, LangGraph, LangChain) into a single, cohesive system.`,
+                    `Full-stack development of the broker-facing application (React/TS, Flask, MongoDB).`,
+                    `Successful demonstration of a complex, autonomous business workflow as a functional POC.`
+                ]
+            },
+        },
+        {
+            id: 1,
+            companyLogo: _uh, // Replace _uh with your imported logo variable
+            title: 'Teaching Assistant (Data Science)',
+            company: 'University of Houston',
+            employmentType: 'Part-time',
+            duration: 'Jan 2025 - Present',
+            location: 'Houston, TX',
+            responsibilities: [
+                "Mentored and provided technical support to 86 graduate data science students, clarifying complex concepts and project requirements.",
+                "Graded assignments, quizzes, and final projects, providing detailed, constructive feedback to support academic and professional growth.",
+                "Assisted the professor in managing course logistics, preparing materials, and proctoring exams for the Data Science program.",
+                "Hosted weekly office hours to offer one-on-one help with Python, Pandas, and Scikit-learn, improving overall student comprehension.",
+                "Led review sessions before exams to reinforce foundational data science principles and problem-solving techniques."
+            ],
+            linkedinUrl: 'https://www.linkedin.com/school/university-of-houston/',
+            aboutProject: {
+                about: `As a Teaching Assistant for the Engineering Data Science graduate program, I supported professors and students in foundational courses.`,
+                projectOverview: `This role involved reinforcing complex topics in data science, machine learning, and statistical analysis. My primary goal was to act as a bridge between the students and the professor, ensuring students had the resources and support needed to succeed in their coursework.`,
+                developmentJourney: { // Re-purposing this section for TA duties
+                    studentMentorship: [
+                        `Provided direct technical support to 86 graduate students, helping them debug code and understand complex algorithms for their projects.`
+                    ],
+                    academicSupport: [
+                        `Graded all assignments and projects, ensuring fairness and providing high-quality, constructive feedback to help students learn from their mistakes.`
+                    ],
+                    courseLogistics: [
+                        `Assisted the professor with course management, including preparing lecture materials, managing online forums, and proctoring examinations.`
+                    ]
+                },
+                technologiesUsed: [ // Renaming this section to 'Key Skills'
+                    `Key Skills: Python, Pandas, Scikit-learn, Data Visualization, Mentorship, Technical Communication.`
+                ],
+                myContributions: [
+                    `Directly contributed to the academic success and understanding of a large cohort of graduate students.`,
+                    `Helped maintain a high-quality learning environment by providing timely feedback and support.`,
+                    `Acted as a reliable resource for both the professor and the students throughout the semester.`
+                ]
+            },
+        },
+        {
+            id: 2,
             companyLogo: _unify,
             title: 'Software Development Engineer',
             company: 'Unify Technologies',
@@ -68,7 +157,7 @@ const library = {
             },
         },
         {
-            id: 1,
+            id: 3,
             companyLogo: _walkover,
             title: 'Frontend Developer Intern',
             company: 'Walkover',
@@ -108,7 +197,7 @@ const library = {
             },
         },
         {
-            id: 2,
+            id: 4,
             companyLogo: _highradius,
             title: 'Trainee - Highako Product',
             company: 'HighRadius',
